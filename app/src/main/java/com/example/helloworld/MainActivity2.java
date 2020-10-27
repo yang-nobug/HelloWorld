@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.example.helloworld.gridview.GridViewActivity;
 import com.example.helloworld.listview.ListViewActivity;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
     private Button mbtnEditText;
     private Button mbtnImageView;
     private Button mbtnListView;
+    private Button mbtnGridView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +64,14 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity2.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        mbtnGridView = findViewById(R.id.btn_gridview);
+        mbtnGridView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, GridViewActivity.class);
                 startActivity(intent);
             }
         });

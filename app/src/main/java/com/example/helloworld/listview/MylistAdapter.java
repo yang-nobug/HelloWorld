@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.helloworld.R;
 
 public class MylistAdapter extends BaseAdapter {
@@ -59,7 +60,7 @@ public class MylistAdapter extends BaseAdapter {
         holder.tv_title.setText("这是标题");
         holder.tv_time.setText("2088/08/08");
         holder.tv_content.setText("这是内容呀");
-
+        Glide.with(mContext).load("https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png").into(holder.imageView);
         return convertView;
     }
 }
