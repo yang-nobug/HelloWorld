@@ -7,5 +7,5 @@
         android:id="@+id/rv_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fff000"/>
+        android:background="#0fff00"/>
 </RelativeLayout>
