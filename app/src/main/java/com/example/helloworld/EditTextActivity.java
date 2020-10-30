@@ -28,6 +28,13 @@ public class EditTextActivity extends AppCompatActivity {
                 Toast.makeText(EditTextActivity.this,"登录成功!",Toast.LENGTH_LONG).show();
             }
         });
+        mbtnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EditTextActivity.this,loginActivity.class);
+                startActivity(intent);
+            }
+        });
         texZhuce = findViewById(R.id.btn_zhu);
         texZhuce.setOnClickListener(new View.OnClickListener() {
             @Override
