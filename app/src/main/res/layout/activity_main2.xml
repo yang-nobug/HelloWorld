@@ -69,7 +69,20 @@
             android:layout_height="wrap_content"
             android:text="RecyclerView"
             android:textAllCaps="false"
-            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:id="@+id/btn_tablelogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TableLayout"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/btn_gridlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GridLayout"
+            android:textAllCaps="false"
             />
     </LinearLayout>
 

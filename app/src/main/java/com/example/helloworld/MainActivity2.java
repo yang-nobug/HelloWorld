@@ -6,8 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 
+import com.example.helloworld.Layout.GridLayoutActivity;
+import com.example.helloworld.Layout.TableLayoutActivity;
 import com.example.helloworld.gridview.GridViewActivity;
 import com.example.helloworld.listview.ListViewActivity;
 import com.example.helloworld.recyclerview.RecyclerViewActivity;
@@ -20,6 +21,8 @@ public class MainActivity2 extends AppCompatActivity {
     private Button mbtnListView;
     private Button mbtnGridView;
     private Button mbtnRecyclerView;
+    private Button mbtnTableLayout;
+    private Button mbtnGridLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +85,22 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity2.this, RecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        mbtnTableLayout = findViewById(R.id.btn_tablelogin);
+        mbtnTableLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, TableLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+        mbtnGridLayout = findViewById(R.id.btn_gridlayout);
+        mbtnGridLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, GridLayoutActivity.class);
                 startActivity(intent);
             }
         });

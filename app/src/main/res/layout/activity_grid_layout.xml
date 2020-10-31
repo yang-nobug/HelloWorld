@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="6"
+    tools:context=".Layout.GridLayoutActivity"
+    android:background="@drawable/xiexuegang">
+    <ImageView
+        android:id="@+id/imv_1"
+        android:layout_gravity="end"
+        android:layout_columnSpan="4"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        />
+    <ImageView
+        android:id="@+id/imv_2"
+        android:layout_column="5"
+        android:layout_row="0"
+        />
+</GridLayout>
